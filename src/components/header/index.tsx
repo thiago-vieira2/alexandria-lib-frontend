@@ -11,8 +11,9 @@ export default function Header() {
             </div>
 
             <div className="option-header">
-                <input type="text" className='SerchBook' placeholder='Buscar' />
-                <p>Login</p>
+                <input type="text" className='SearchBook' placeholder='Buscar' />
+                <p>sobre</p>
+                <a className='login' href="">Login</a>
             </div>
         </header>
     );

@@ -6,19 +6,42 @@ header {
    
 
     .option-header {
+        display: flex;
+        align-items: center;
 
+
+        .SearchBook {
+            padding-left: 2vh;
+            border-radius: 8px;
+            width: 30vh;
+            height: 5vh;
+
+            
+        }
+        
         display: flex;
         justify-content: flex-end;
         gap: 5vh;
         padding-right: 5vh;
 
-        p {
+        .login {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             background-color: black;
             border-radius: 5px;
-            width: 8vh;
-            height: 2vh;
+            width: 12vh;
+            height: 5vh;
             color: white;
             text-align: center;
+            text-decoration: none;
+            transition: 1s;
+            border-radius: 8px;
+
+            &:hover {
+                transform: scale(1.1);
+                transition: 1s;
+            }
         }
     }
     
