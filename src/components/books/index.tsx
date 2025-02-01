@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import './index.scss';
+import Color from "color-thief-react";
 
-export default function Books({ namebook, nameauthor, genderbook  }  ) {
+export default function Books({ namebook, nameauthor, genderbook }) {
   const [img, setImg] = useState<string | null>(null);
 
   const SubirImg = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -14,7 +15,12 @@ export default function Books({ namebook, nameauthor, genderbook  }  ) {
   };
 
   return (
-    <div className="bloco_main">
+
+
+
+    
+
+   /*  <div className="bloco_main">
 
       <div className="img_book">
         {img ? (
@@ -28,14 +34,15 @@ export default function Books({ namebook, nameauthor, genderbook  }  ) {
 
       <div className="info_book">
         <h3>
-          {namebook} {/* nome de exemplo de livro  */}
-        </h3>
+          {namebook} {/* nome de exemplo de livro  *///}
+      //  </h3 >
 
-        <div className="gender">
-          <p>{genderbook}</p>
-        </div>
-      </div>
-    </div>
+  {/* <div className="gender">
+    <p>{genderbook}</p>
+  </div>
+   */}    //</div>
+    //</div>
+    
   );
 }
 
