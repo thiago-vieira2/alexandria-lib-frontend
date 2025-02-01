@@ -1,20 +1,27 @@
 import React from "react";
-import './index.scss'
+import './index.scss';
+import { MdEmail, MdLock } from "react-icons/md";
 
 export default function Login() {
     return (
         <div className="login_pages">
-
             <div className="login-area">
                 <form>
-                    <label htmlFor="">Email:</label><input type="email" name="" id="" placeholder="Digite seu email" />
-                    <label>Senha:</label><input type="password" name="" id="" placeholder="Digite sua senha" />
+                <h1>Entre na sua conta</h1>
+
+                    <div className="input-container">
+                        <MdEmail className="icon" />
+                        <input type="email" placeholder="Digite seu email" />
+                    </div>
+
+                    <div className="input-container">
+                        <MdLock className="icon" />
+                        <input type="password" placeholder="Digite sua senha" />
+                    </div>
+
                     <button className="entrar">Entrar</button>
-
                 </form>
-
             </div>
-
         </div>
     );
 }
