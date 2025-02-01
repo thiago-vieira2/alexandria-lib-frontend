@@ -4,6 +4,8 @@ import './App.scss';
 import Header from './components/header/index.tsx';
 import Books from './components/books/index.tsx';
 import Login from './pages/login/index.tsx';
+import { Router } from './router.tsx';
+
 
 let livros: { namebook: string; nameauthor: string; genderbook: string }[] = [
   {
@@ -24,8 +26,7 @@ let livros: { namebook: string; nameauthor: string; genderbook: string }[] = [
 function App() {
   return (
     <div className="App">
-     <Header/>
-     <Login/>
+     <Router/>
     </div>
   );
 }
